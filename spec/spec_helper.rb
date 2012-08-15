@@ -34,7 +34,6 @@ Spork.prefork do
   require 'shoulda/matchers/integrations/rspec'
   require 'capybara/rails'
   require 'capybara/rspec'
-  require 'prickle/capybara' 
   Capybara.javascript_driver = :webkit
 
   # Requires supporting ruby files with custom matchers and macros, etc,

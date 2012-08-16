@@ -10,12 +10,14 @@
 *  amount: decimal
 *  comment: string
 *  category_id: integer
+*  user_id: integer
 
 ### Income
 *  date: date
 *  amount: decimal
 *  comment: string
 *  category_id: integer
+*  user_id: integer
 
 ### Identity
 *  nickname: string

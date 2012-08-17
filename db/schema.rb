@@ -32,6 +32,7 @@ ActiveRecord::Schema.define(:version => 20120817090116) do
     t.decimal  "amount",      :precision => 8, :scale => 2
     t.string   "comment"
     t.integer  "category_id"
+    t.integer  "user_id"
     t.datetime "created_at",                                :null => false
     t.datetime "updated_at",                                :null => false
   end
@@ -41,6 +42,7 @@ ActiveRecord::Schema.define(:version => 20120817090116) do
     t.decimal  "amount",      :precision => 8, :scale => 2
     t.string   "comment"
     t.integer  "category_id"
+    t.integer  "user_id"
     t.datetime "created_at",                                :null => false
     t.datetime "updated_at",                                :null => false
   end
@@ -52,8 +54,9 @@ ActiveRecord::Schema.define(:version => 20120817090116) do
     t.string   "auth_token"
     t.string   "password_reset_token"
     t.datetime "password_reset_sent_at"
-    t.datetime "created_at",             :null => false
-    t.datetime "updated_at",             :null => false
+    t.decimal  "balance",                :precision => 8, :scale => 2, :default => 0.0
+    t.datetime "created_at",                                                            :null => false
+    t.datetime "updated_at",                                                            :null => false
   end
 
 end

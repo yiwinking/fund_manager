@@ -19,6 +19,7 @@ gem 'therubyracer'
 # Omniauth
 gem 'omniauth'
 gem 'omniauth-github'
+gem 'omniauth-identity'
 
 # Design Pattern Practice
 # gem 'cells'

@@ -1,0 +1,15 @@
+<%= simple_form_for @user, html: { class: 'form-horizontal' } do |f| %>
+  <fieldset>
+    <legend>Sign Up</legend>
+
+    <%= f.input :nickname %>
+    <%= f.input :email %>
+    <%= f.input :password %>
+    <%= f.input :password_confirmation %>
+
+    <div class="form-actions">
+      <%= f.submit nil, :class => 'btn btn-primary' %>
+      <%= link_to 'Back to Login', login_path, :class => 'btn' %>
+    </div>
+  </fieldset>
+<% end %>

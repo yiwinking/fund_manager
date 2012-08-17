@@ -39,6 +39,7 @@ gem "simple_form"
 
 # Authentication
 gem "bcrypt-ruby", :require => "bcrypt"
+gem 'simple_login', git: 'git@github.com:zernel/simple_login.git', branch: :develop
 
 
 group :assets do

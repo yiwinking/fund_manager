@@ -110,6 +110,7 @@ GEM
     json (1.7.4)
     jwt (0.1.5)
       multi_json (>= 1.0)
+    libnotify (0.7.3)
     libv8 (3.3.10.4)
     libwebsocket (0.1.5)
       addressable
@@ -269,6 +270,7 @@ DEPENDENCIES
   guard-rspec
   guard-spork
   jquery-rails
+  libnotify
   omniauth
   omniauth-github
   omniauth-identity
@@ -276,6 +278,7 @@ DEPENDENCIES
   quiet_assets
   rack_session_access
   rails (= 3.2.8)
+  rb-inotify
   rspec-cells
   rspec-rails
   sass-rails

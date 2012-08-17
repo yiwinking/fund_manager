@@ -29,36 +29,22 @@ gem 'omniauth-github'
 # gem 'carrierwave'
 # gem 'mini_magick'
 
-# Auto suitable image
-# gem 'responsive_image_tag'
-
-# SEO Helper
-# gem 'sitemap_generator'
-
 # Paginator
 # gem 'kaminari'
 # gem 'will_paginate'
 
 # Form tool
 # gem "simple_form"
-# gem 'formtastic'
-# gem 'formtastic-bootstrap'
 
 # Authentication
-# gem 'devise'
-# gem 'clearance'
 gem "bcrypt-ruby", :require => "bcrypt"
 
-# Facebook API
-# gem 'koala'
-
-# Payment
-# gem 'activemerchant', :require => 'active_merchant'
 
 group :assets do
   gem 'sass-rails'
   gem 'coffee-rails'
   gem 'uglifier'
+  gem 'bootstrap-sass'
 end
 
 group :development, :test do

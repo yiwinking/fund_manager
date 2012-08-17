@@ -10,12 +10,15 @@ gem 'jquery-rails'
 
 # Database
 # gem 'pg'
-# gem 'mysql2'
 gem 'sqlite3'
 
 # Javascript engine
 gem 'execjs'
 gem 'therubyracer'
+
+# Omniauth
+gem 'omniauth'
+gem 'omniauth-github'
 
 # Design Pattern Practice
 # gem 'cells'

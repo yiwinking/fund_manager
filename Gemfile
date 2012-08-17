@@ -35,7 +35,7 @@ gem 'omniauth-identity'
 # gem 'will_paginate'
 
 # Form tool
-# gem "simple_form"
+gem "simple_form"
 
 # Authentication
 gem "bcrypt-ruby", :require => "bcrypt"

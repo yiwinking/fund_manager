@@ -13,6 +13,10 @@ class ApplicationController < ActionController::Base
     current_user.present?
   end
 
+  def redirect_to_root
+    redirect_to root_path
+  end
+
   def authorize
     redirect_to login_url, alert: 'Not authorized. Please login.' if current_user.nil?
   end

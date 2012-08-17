@@ -1,5 +1,6 @@
 class SessionsController < ApplicationController
   skip_before_filter :authorize
+  before_filter :redirect_to_root, only: [:new, :create], if: :signed_in? 
 
   def create
     if request.env['omniauth.auth']

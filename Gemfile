@@ -41,6 +41,8 @@ gem "simple_form"
 gem "bcrypt-ruby", :require => "bcrypt"
 gem 'simple_login', git: 'git@github.com:zernel/simple_login.git', branch: :develop
 
+gem 'ancestry'
+
 
 group :assets do
   gem 'sass-rails'

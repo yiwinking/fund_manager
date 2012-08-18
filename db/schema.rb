@@ -28,7 +28,7 @@ ActiveRecord::Schema.define(:version => 20120818114927) do
     t.string   "ancestry"
   end
 
-  create_table "expenses", :force => true do |t|
+  create_table "expense_records", :force => true do |t|
     t.date     "date"
     t.decimal  "amount",      :precision => 8, :scale => 2
     t.string   "comment"
@@ -38,7 +38,7 @@ ActiveRecord::Schema.define(:version => 20120818114927) do
     t.datetime "updated_at",                                :null => false
   end
 
-  create_table "incomes", :force => true do |t|
+  create_table "income_records", :force => true do |t|
     t.date     "date"
     t.decimal  "amount",      :precision => 8, :scale => 2
     t.string   "comment"

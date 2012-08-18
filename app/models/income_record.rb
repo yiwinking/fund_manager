@@ -1,4 +1,4 @@
-class Expense < ActiveRecord::Base
+class IncomeRecord < ActiveRecord::Base
   attr_accessible :amount, :category_id, :comment, :date, :user_id
   belongs_to :category
 

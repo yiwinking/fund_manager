@@ -1,8 +1,7 @@
 FundManager::Application.routes.draw do
   root :to => 'content#index'
 
-  resources :income_records
-  resources :expense_records
+  resources :billing_records
 
   # Omniauth
   match "/auth/:provider/callback", to: "sessions#create"

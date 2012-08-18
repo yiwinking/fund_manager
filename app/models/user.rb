@@ -3,8 +3,7 @@ class User < ActiveRecord::Base
 
   has_secure_password
   has_many :authentications
-  has_many :income_records
-  has_many :expense_records
+  has_many :billing_records
 
   validates :nickname, presence: true
   validates :email, presence: true, uniqueness: true, format: {:with => /\A([^@\s]+)@((?:[-a-z0-9]+\.)+[a-z]{2,})\z/}

@@ -1,14 +1,15 @@
 ### Category
 *  name: string
+*  ancestry: string
 
-### Expense
+### ExpenseRecord
 *  date: date
 *  amount: decimal
 *  comment: string
 *  category_id: integer
 *  user_id: integer
 
-### Income
+### IncomeRecord
 *  date: date
 *  amount: decimal
 *  comment: string

@@ -1,14 +1,9 @@
 ### Category
 *  name: string
+*  ancestry: string
 
-### Expense
-*  date: date
-*  amount: decimal
-*  comment: string
-*  category_id: integer
-*  user_id: integer
-
-### Income
+### BillingRecord
+*  type_cd: integer
 *  date: date
 *  amount: decimal
 *  comment: string

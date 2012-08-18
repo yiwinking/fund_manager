@@ -1,0 +1,36 @@
+<h1>Billing Records</h1>
+<table class="table table-striped">
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Date</th>
+      <th>Category</th>
+      <th>Amount</th>
+      <th>Comment</th>
+      <th>Actions</th>
+    </tr>
+  </thead>
+  <tbody>
+    <% @records.each do |record| %>
+      <tr>
+        <td>
+          <span class="label <%= record.income? ? "label-success" : "label-warning" %>"><%= record.type_cn %></span>
+        </td>
+        <td><%= record.date %></td>
+        <td><%= record.category.name %></td>
+        <td>
+          <span class="badge <%= record.income? ? "badge-success" : "badge-warning" %>"><%= record.amount %></span>
+        </td>
+        <td><%= record.comment %></td>
+        <td>
+          <%= link_to 'Edit', edit_billing_record_path(record), :class => 'btn btn-mini' %>
+          <%= link_to 'Delete', billing_record_path(record), method: :delete, confirm: 'Are you sure?', :class => 'btn btn-mini btn-danger' %>
+        </td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+
+
+<%= link_to 'New', new_billing_record_path, :class => 'btn btn-primary' %>

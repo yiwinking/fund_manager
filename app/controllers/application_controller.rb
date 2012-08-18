@@ -1,3 +1,4 @@
+# -*- encoding: utf-8 -*-
 class ApplicationController < ActionController::Base
   protect_from_forgery
   before_filter :authorize
@@ -18,6 +19,6 @@ class ApplicationController < ActionController::Base
   end
 
   def authorize
-    redirect_to login_url, alert: 'Not authorized. Please login.' if current_user.nil?
+    redirect_to login_url, alert: '该页面需要登录才可访问，请登录！' if current_user.nil?
   end
 end

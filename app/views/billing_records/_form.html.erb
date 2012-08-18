@@ -3,9 +3,12 @@
     <legend><%= @record.new_record? ? 'New' : 'Edit' %> Record</legend>
 
     <%= f.input :date %>
-    <%= f.association :category, collection: Category.all, prompt: "Choose a Category" %>
+    <%= f.association :category, collection: Category.all, include_blank: false %>
     <%= f.input :amount %>
     <%= f.input :comment %>
+    <%= f.input :type do %>
+      <%= f.select :type, BillingRecord::TYPES_CN.map { |r| [r[1], r[0]] }, include_blank: false %>
+    <% end -%>
 
     <div class="form-actions">
       <%= f.submit nil, :class => 'btn btn-primary' %>

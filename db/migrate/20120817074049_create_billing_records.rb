@@ -1,6 +1,6 @@
-class CreateIncomeRecords < ActiveRecord::Migration
+class CreateBillingRecords < ActiveRecord::Migration
   def change
-    create_table :income_records do |t|
+    create_table :billing_records do |t|
       t.date     :date
       t.decimal  :amount, :precision => 8, :scale => 2
       t.string   :comment
@@ -11,8 +11,8 @@ class CreateIncomeRecords < ActiveRecord::Migration
       t.timestamps
     end
 
-    add_index :income_records, :type_cd
-    add_index :income_records, :user_id
-    add_index :income_records, :category_id
+    add_index :billing_records, :type_cd
+    add_index :billing_records, :user_id
+    add_index :billing_records, :category_id
   end
 end

@@ -215,6 +215,8 @@ GEM
       rubyzip
     shoulda-matchers (1.2.0)
       activesupport (>= 3.0.0)
+    simple_enum (1.5.1)
+      activesupport (>= 3.0.0)
     simple_form (2.0.2)
       actionpack (~> 3.0)
       activemodel (~> 3.0)
@@ -283,6 +285,7 @@ DEPENDENCIES
   rspec-rails
   sass-rails
   shoulda-matchers
+  simple_enum
   simple_form
   simple_login!
   simplecov

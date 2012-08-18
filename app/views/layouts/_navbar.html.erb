@@ -14,9 +14,9 @@
             <span class="caret"></span>
           </a>
           <ul class="dropdown-menu">
-            <li><a href="#">Profile</a></li>
+            <li><a href="#"><%= t('profile') %></a></li>
             <li class="divider"></li>
-            <li><%= link_to "Sign Out", logout_path, method: :delete %></li>
+            <li><%= link_to t('logout'), logout_path, method: :delete %></li>
           </ul>
         </div>
       <% end -%>
@@ -24,7 +24,7 @@
       <a class="brand" href="/">FundManager</a>
       <div class="nav-collapse">
         <ul class="nav">
-          <li><%= link_to "Billing Record", billing_records_path %></li>
+          <li><%= link_to t('billing_record.title'), billing_records_path %></li>
         </ul>
       </div>
     </div>

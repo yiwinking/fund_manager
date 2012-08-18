@@ -11,8 +11,8 @@
     <%= f.input :comment %>
 
     <div class="form-actions">
-      <%= f.submit nil, :class => 'btn btn-primary' %>
-      <%= link_to 'Cancel', :back, :class => 'btn' %>
+      <%= f.submit t('billing_record.submit'), :class => 'btn btn-primary' %>
+      <%= link_to t('cancel'), :back, :class => 'btn' %>
     </div>
   </fieldset>
 <% end %>

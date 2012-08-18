@@ -1,13 +1,13 @@
-<h1>Billing Records</h1>
+<h1><%= t('billing_record.title') %></h1>
 <table class="table table-striped">
   <thead>
     <tr>
-      <th>Type</th>
-      <th>Date</th>
-      <th>Category</th>
-      <th>Amount</th>
-      <th>Comment</th>
-      <th>Actions</th>
+      <th><%= t('billing_record.type') %></th>
+      <th><%= t('billing_record.date') %></th>
+      <th><%= t('billing_record.category') %></th>
+      <th><%= t('billing_record.amount') %></th>
+      <th><%= t('billing_record.comment') %></th>
+      <th><%= t('actions') %></th>
     </tr>
   </thead>
   <tbody>
@@ -23,8 +23,8 @@
         </td>
         <td><%= record.comment %></td>
         <td>
-          <%= link_to 'Edit', edit_billing_record_path(record), :class => 'btn btn-mini' %>
-          <%= link_to 'Delete', billing_record_path(record), method: :delete, confirm: 'Are you sure?', :class => 'btn btn-mini btn-danger' %>
+          <%= link_to t('edit'), edit_billing_record_path(record), :class => 'btn btn-mini' %>
+          <%= link_to t('delete'), billing_record_path(record), method: :delete, confirm: t('are_you_sure_delete'), :class => 'btn btn-mini btn-danger' %>
         </td>
       </tr>
     <% end %>
@@ -33,4 +33,4 @@
 
 
 
-<%= link_to 'New', new_billing_record_path, :class => 'btn btn-primary' %>
+<%= link_to t('billing_record.new'), new_billing_record_path, :class => 'btn btn-primary' %>

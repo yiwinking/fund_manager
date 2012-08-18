@@ -1,0 +1,30 @@
+<%= form_tag sessions_path, class: "form-horizontal" do %>
+  <fieldset>
+    <legend><%= t('login', default: 'Login') %></legend>
+    <div class="control-group">
+      <%= label_tag :email, t('user.email') ,class: "control-label" %>
+      <div class="controls">
+        <%= text_field_tag :email, params[:email], class: "input-xlarge" %>
+      </div>
+    </div>
+    <div class="control-group">
+      <%= label_tag :password, t('user.password'), class: "control-label"  %>
+      <div class="controls">
+        <%= password_field_tag :password, nil ,class: "input-xlarge" %>
+      </div>
+    </div>
+    <div class="control-group">
+      <%= label_tag :remember_me, t('remember_me'), class: "control-label"  %>
+      <div class="controls">
+        <%= check_box_tag :remember_me, 1, params[:remember_me] %>
+      </div>
+    </div>
+    <div class="form-actions">
+      <%= submit_tag t('login'), class: "btn btn-large btn-primary" %>
+      <%= link_to t('register'), new_user_path, class: "btn btn-large btn-info" %>
+
+      <%= link_to t('login_with_github'), '/auth/github', class: "btn btn-large btn-success" %>
+      <%#= link_to t('have_not_account'), new_password_reset_path, class: "btn btn-large btn-warning" %>
+    </div>
+  </fieldset>
+<% end %>

@@ -1,0 +1,19 @@
+'zh-CN':
+  simple_form:
+    labels:
+      defaults:
+        name: '名称'
+      user:
+        nickname: '昵称'
+        email: '邮箱'
+        password: '密码'
+        password_confirmation: '确认密码'
+        balance: '账户余额'
+      category:
+        name: '种类名'
+      billing_record:
+        date: '日期'
+        amount: '数额'
+        comment: '注释'
+        category: '收入/消费种类'
+        type: '类型'

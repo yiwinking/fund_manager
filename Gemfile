@@ -10,12 +10,16 @@ gem 'jquery-rails'
 
 # Database
 # gem 'pg'
-# gem 'mysql2'
 gem 'sqlite3'
 
 # Javascript engine
 gem 'execjs'
 gem 'therubyracer'
+
+# Omniauth
+gem 'omniauth'
+gem 'omniauth-github'
+gem 'omniauth-identity'
 
 # Design Pattern Practice
 # gem 'cells'
@@ -26,36 +30,26 @@ gem 'therubyracer'
 # gem 'carrierwave'
 # gem 'mini_magick'
 
-# Auto suitable image
-# gem 'responsive_image_tag'
-
-# SEO Helper
-# gem 'sitemap_generator'
-
 # Paginator
 # gem 'kaminari'
 # gem 'will_paginate'
 
 # Form tool
-# gem "simple_form"
-# gem 'formtastic'
-# gem 'formtastic-bootstrap'
+gem "simple_form"
 
 # Authentication
-# gem 'devise'
-# gem 'clearance'
 gem "bcrypt-ruby", :require => "bcrypt"
+gem 'simple_login', git: 'git@github.com:zernel/simple_login.git', branch: :develop
 
-# Facebook API
-# gem 'koala'
+gem 'ancestry'
+gem 'simple_enum'
 
-# Payment
-# gem 'activemerchant', :require => 'active_merchant'
 
 group :assets do
   gem 'sass-rails'
   gem 'coffee-rails'
   gem 'uglifier'
+  gem 'bootstrap-sass'
 end
 
 group :development, :test do

@@ -1,0 +1,11 @@
+<%= simple_form_for @user, url: password_reset_path(params[:id]), html: { class: 'form-horizontal' } do |f| %>
+  <fieldset>
+    <legend>Change Password</legend>
+    <%= f.input :password %>
+    <%= f.input :password_confirmation %>
+
+    <div class="form-actions">
+      <%= f.submit "Update Password", class: "btn btn-large btn-primary" %>
+    </div>
+  </fieldset>
+<% end %>

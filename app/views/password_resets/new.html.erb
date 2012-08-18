@@ -1,0 +1,10 @@
+<%= form_tag password_resets_path, method: :post, class: "form-horizontal" do %>
+  <fieldset>
+    <legend>Reset Password</legend>
+    <div class="control-group">
+      <%= label_tag :email, nil, class: "control-label" %>
+      <div class="controls"><%= text_field_tag :email, params[:email] %></div>
+    </div>
+    <div class="form-actions"><%= submit_tag t("user.reset_password", default: "Reset password"), class: "btn btn-large btn-primary" %></div>
+  </fieldset>
+<% end %>

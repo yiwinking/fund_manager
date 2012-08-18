@@ -1,0 +1,15 @@
+<%= simple_form_for @user, html: { class: 'form-horizontal' } do |f| %>
+  <fieldset>
+    <legend><%= t('register_now') %></legend>
+
+    <%= f.input :nickname %>
+    <%= f.input :email %>
+    <%= f.input :password %>
+    <%= f.input :password_confirmation %>
+
+    <div class="form-actions">
+      <%= f.submit t('register'), :class => 'btn btn-large btn-primary' %>
+      <%= link_to t('back_to_login'), login_path, :class => 'btn btn-large' %>
+    </div>
+  </fieldset>
+<% end %>

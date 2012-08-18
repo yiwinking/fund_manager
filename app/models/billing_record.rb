@@ -12,6 +12,7 @@ class BillingRecord < ActiveRecord::Base
   validates :amount, presence: true
   validates :category_id, presence: true
   validates :type_cd, presence: true
+  validates :type, presence: true
 
   def type_cn
     TYPES_CN[type]

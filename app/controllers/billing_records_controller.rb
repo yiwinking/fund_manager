@@ -15,4 +15,23 @@ class BillingRecordsController < ApplicationController
       render :new
     end
   end
+
+  def edit
+    @record = current_user.billing_records.find(params[:id])
+  end
+
+  def update
+    @record = current_user.billing_records.find(params[:id])
+    if @record.update_attributes(params[:billing_record])
+      redirect_to billing_records_path, notice: 'Billing Record was successfully updated.'
+    else
+      render :edit
+    end
+  end
+
+  def destroy
+    @record = current_user.billing_records.find(params[:id])
+    @record.destroy
+    redirect_to billing_records_path, notice: 'Billing Record was successfully deleted.'
+  end
 end

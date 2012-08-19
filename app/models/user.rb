@@ -10,7 +10,7 @@ class User < ActiveRecord::Base
   validates :password, presence: true, length: 6..20, on: :create
 
   before_create { generate_token(:auth_token) }
-  after_create { send_account_confirmation }
+  #after_create { send_account_confirmation }
 
   def send_password_reset
     generate_token(:password_reset_token)

@@ -72,10 +72,6 @@ group :development, :test do
 end
 
 group :test do
-  if RUBY_PLATFORM =~ /linux/
-    gem 'rb-inotify'
-    gem 'libnotify'
-  end
   gem 'database_cleaner'
   gem 'shoulda-matchers'
   gem 'rack_session_access'

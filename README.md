@@ -10,7 +10,6 @@ Here is the [Demo](http://fund-manager.herokuapp.com), and the test account with
 * 我可以记录自己的资金收入
 * 我可以为每笔收入进行分类及注释
 
-## TODO
 ### v0.1.1 搜索
 
 * 按种类搜索
@@ -18,6 +17,7 @@ Here is the [Demo](http://fund-manager.herokuapp.com), and the test account with
 * 按时间段搜索
 * 组合搜索
 
+## TODO
 ### v0.1.2 面包屑
 
 * 分别显示收入记录列表与支出记录列表

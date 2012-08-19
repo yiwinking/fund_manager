@@ -1,12 +1,5 @@
-GIT
-  remote: git@github.com:zernel/simple_login.git
-  revision: 60b8c5be52a1a54def5fa224100f215988d4c66e
-  branch: develop
-  specs:
-    simple_login (0.1.0)
-
 GEM
-  remote: http://ruby.taobao.org/
+  remote: https://rubygems.org/
   specs:
     actionmailer (3.2.8)
       actionpack (= 3.2.8)
@@ -304,7 +297,6 @@ DEPENDENCIES
   shoulda-matchers
   simple_enum
   simple_form
-  simple_login!
   simplecov
   simplecov-rcov
   spork

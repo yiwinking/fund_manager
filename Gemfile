@@ -1,5 +1,5 @@
-#source 'https://rubygems.org'
-source 'http://ruby.taobao.org'
+source 'https://rubygems.org'
+#source 'http://ruby.taobao.org'
 
 ruby '1.9.3'
 gem "heroku"
@@ -39,7 +39,6 @@ gem "simple_form"
 
 # Authentication
 gem "bcrypt-ruby", :require => "bcrypt"
-gem 'simple_login', git: 'git@github.com:zernel/simple_login.git', branch: :develop
 
 gem 'ancestry'
 gem 'simple_enum'

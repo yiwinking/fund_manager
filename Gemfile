@@ -1,16 +1,16 @@
 #source 'https://rubygems.org'
 source 'http://ruby.taobao.org'
 
+ruby '1.9.3'
+gem "heroku"
+gem 'thin'
+
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 gem 'rails', '3.2.8'
 
 # Javascript library
 gem 'jquery-rails'
-
-# Database
-# gem 'pg'
-gem 'sqlite3'
 
 # Javascript engine
 gem 'execjs'
@@ -55,7 +55,6 @@ end
 group :development, :test do
   gem 'quiet_assets'
   gem 'sqlite3'
-  gem 'thin'
   gem 'pry'
   gem 'ffaker'
   gem "spork"
@@ -84,4 +83,8 @@ group :test do
   # gem 'prickle'
   gem 'simplecov', :require => false
   gem 'simplecov-rcov', :require => false
+end
+
+group :production do
+  gem 'pg'
 end

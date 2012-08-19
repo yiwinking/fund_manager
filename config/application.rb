@@ -17,6 +17,9 @@ end
 
 module FundManager
   class Application < Rails::Application
+    # Heroku requires this to be false
+    config.assets.initialize_on_precompile = false
+
     Time::DATE_FORMATS.merge!(:default => "%Y/%m/%d %I:%M %p", :ymd => "%Y/%m/%d")
     # Settings in config/environments/* take precedence over those specified here.
     # Application configuration should go into files in config/initializers

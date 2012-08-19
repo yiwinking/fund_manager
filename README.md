@@ -1,10 +1,8 @@
 # Fund Manager
 Here is the [Demo](http://fund-manager.herokuapp.com), and the test account with email `admin@fundmanager.com` and password `123456`
 
-# Requirement
-
 ## DONE
-## v0.1.0
+### v0.1.0
 
 * 我可以登录系统（多用户登录）（支持第三方登录）
 * 我可以记录每天的消费情况

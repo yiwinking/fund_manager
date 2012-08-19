@@ -19,9 +19,9 @@ class User < ActiveRecord::Base
     UserMailer.password_reset(self).deliver
   end
 
-  def send_account_confirmation
-    UserMailer.account_confirmation(self).deliver
-  end
+  #def send_account_confirmation
+    #UserMailer.account_confirmation(self).deliver
+  #end
 
   def generate_token(column)
     begin

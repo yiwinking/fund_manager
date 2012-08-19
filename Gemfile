@@ -46,11 +46,16 @@ group :development, :test do
   gem 'quiet_assets'
   gem 'sqlite3'
   gem 'pry'
+end
+
+group :test do
+  gem 'database_cleaner'
+  gem 'shoulda-matchers'
+  gem 'rack_session_access'
   gem 'ffaker'
   gem "spork"
   gem 'spork-rails'
   gem "rspec-rails"
-  gem 'rspec-cells'
   gem 'factory_girl_rails'
   gem 'capybara'
   gem 'capybara-webkit'
@@ -59,14 +64,7 @@ group :development, :test do
   gem 'guard-rspec'
   gem 'guard-rails'
   gem "guard-bundler"
-end
 
-group :test do
-  gem 'database_cleaner'
-  gem 'shoulda-matchers'
-  gem 'rack_session_access'
-  gem 'simplecov', :require => false
-  gem 'simplecov-rcov', :require => false
 end
 
 group :production do

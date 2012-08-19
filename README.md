@@ -1,3 +1,6 @@
+# Fund Manager
+Here is the [Demo](http://fund-manager.herokuapp.com), and the test email is admin@fundmanager.com with  password: 123456 
+
 # Requirement
 
 ## v0.1.0

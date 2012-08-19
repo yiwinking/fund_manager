@@ -1,7 +1,8 @@
 # -*- encoding: utf-8 -*-
 class BillingRecordsController < ApplicationController
   def index
-    @records = current_user.billing_records
+    @search = current_user.billing_records.search(params[:q])
+    @records = @search.result
   end
 
   def new

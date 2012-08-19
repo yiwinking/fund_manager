@@ -1,0 +1,31 @@
+<%= search_form_for @search, url: search_billing_records_path, method: :post, :html => {:class => "form-horizontal"} do |f| %>
+  <fieldset>
+    <div class="control-group">
+      <%= f.label :date_gteq, t('billing_record.date'), class: "control-label" %>
+      <div class="controls">
+        <%= f.text_field :date_gteq %>
+        到
+        <%= f.text_field :date_lteq %>
+      </div>
+    </div>
+    <div class="control-group">
+      <%= f.label :category_name_eq, t('billing_record.category'), class: "control-label" %>
+      <div class="controls">
+        <%= f.select :category_name_eq, Category.all.map { |c| [c.name, c.name]}, include_blank: true %>
+      </div>
+    </div>
+    <div class="control-group">
+      <%= f.label :type_cd_eq, t('billing_record.type'), class: "control-label" %>
+      <div class="controls">
+        <%= f.select :type_cd_eq, BillingRecord::TYPES_NUM.map { |r| [r[1], r[0]] }, include_blank: true %>
+      </div>
+    </div>
+    <%= f.condition_fields do |c| %>
+      <%= render "condition_fields", f: c %>
+    <% end %>
+    <div class="form-actions">
+      <%= f.submit t('filter'), class: "btn btn-primary" %>
+      <%= link_to_add_fields t('add_conditions'), f, :condition, "btn btn-info" %>
+    </div>
+  </fieldset>
+<% end %>

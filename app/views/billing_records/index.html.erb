@@ -1,11 +1,14 @@
-<h1><%= t('billing_record.title') %></h1>
+<h2><%= t('billing_record.title') %></h2>
+
+<%= render 'search' %>
+
 <table class="table table-striped">
   <thead>
     <tr>
-      <th><%= t('billing_record.type') %></th>
-      <th><%= t('billing_record.date') %></th>
+      <th><%= sort_link @search, :type_cd, t('billing_record.type') %></th>
+      <th><%= sort_link @search, :date, t('billing_record.date') %></th>
       <th><%= t('billing_record.category') %></th>
-      <th><%= t('billing_record.amount') %></th>
+      <th><%= sort_link @search, :amount, t('billing_record.amount') %></th>
       <th><%= t('billing_record.comment') %></th>
       <th><%= t('actions') %></th>
     </tr>

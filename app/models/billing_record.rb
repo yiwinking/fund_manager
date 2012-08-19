@@ -6,6 +6,7 @@ class BillingRecord < ActiveRecord::Base
 
   TYPES = [:expense, :income]
   TYPES_CN = {:expense => "支出", :income => "收入"}
+  TYPES_NUM = { '0' => "支出", '1' => "收入"}
   as_enum :type, TYPES
 
   validates :date, presence: true

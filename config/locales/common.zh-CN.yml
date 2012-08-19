@@ -18,6 +18,9 @@
   submit: '提交'
   back: '返回'
   are_you_sure_delete: '请问您确定要删除吗？'
+  filter: '过滤'
+  condition: '过滤条件'
+  add_conditions: '添加过滤条件'
 
   user:
     nickname: '昵称'

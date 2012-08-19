@@ -2,7 +2,7 @@
   <fieldset>
     <legend><%= t('login', default: 'Login') %></legend>
     <div class="control-group">
-      <%= label_tag :email, t('user.email') ,class: "control-label" %>
+      <%= label_tag :email, t('user.email'), class: "control-label" %>
       <div class="controls">
         <%= text_field_tag :email, params[:email], class: "input-xlarge" %>
       </div>

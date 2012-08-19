@@ -33,6 +33,7 @@ gem "simple_form"
 gem "bcrypt-ruby", :require => "bcrypt"
 
 gem 'ancestry'
+gem 'ransack'
 gem 'simple_enum'
 
 group :assets do
